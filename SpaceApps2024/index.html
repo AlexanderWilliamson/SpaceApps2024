@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>NASA Space Apps ExoSky</title>
+<link href="style.css"rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="code.js" defer></script>
+</head>
+
+<body>
+<div id="titleDiv">
+<img src="craiyon_225824_Create_a_hyperrealistic_image_of_a_black_hole_at_the_center_of_a_space_scene_filled_w.png" height="100px">
+<span id="groupName">gALEXy</span>
+<button id="deleteButton">Delete Line</button>
+<svg xmlns="http://www.w3.org/2000/svg" id="theSky" viewBox="0 -90 360 180" preserveAspectRatio="xMidYMid meet"></svg>
+<!--<svg xmlns="http://www.w3.org/2000/svg" id="theSVG" viewBox="0 -90 360 180" preserveAspectRatio="xMidYMid meet"><g id="theSky"></g></svg>-->
+<div id="infoDiv">
+    <div id="planetGroup">
+        <form action="#">
+            <label for="planets" style="color: white; font-weight: bold;">Choose Planet: </label>
+            <select name="planets" id="planetSelect"></select>
+        </form>
+        <div id="planetData"></div>
+    </div>
+    <div id="constellationGroup">
+        <form action="#">
+            <label for="catalogues" style="color: white; font-weight: bold;">Choose Catalogue: </label>
+            <select name="catalogues" id="catalogueSelect">
+                <option value="0">Human Traditional</option>
+                <option value="1">Custom</option>
+            </select>
+        </form>
+        <div style="color:white;" id="constellationListInfo">
+            <div id="constellationList"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
